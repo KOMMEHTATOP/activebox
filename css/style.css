@@ -1,0 +1,170 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  background-color: #fff;
+  color: #6c7279;
+
+  font-smoothing: antialiased; /* СГЛАЖИВАЕТ ШРИФТЫ (ВРОДЕ...) */
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* ----------------HEADER---------------- */
+
+.header {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  border-bottom: 1px solid #b8b4b4;
+}
+
+/* ----------------NAV---------------- */
+
+.nav {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.nav__link {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: .75;
+
+  margin-left: 40px;
+
+  transition: opacity .2s linear;
+}
+
+.nav__link:first-child {
+  margin-left: 0;
+}
+
+.nav__link:hover {
+  opacity: 1;
+}
+
+/* ----------------INTRO---------------- */ 
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 750px;
+  background: #b8b4b4 url('../image/bg_header.jpg') center no-repeat;
+
+  padding-top: 100px;
+}
+
+.intro__title {
+  font-family: 'open sans', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+
+.intro__inner {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.intro__subtitle {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+/* ----------------BUTTON---------------- */ 
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+
+  font-family: 'Raleway', sans-serif;
+  border: 0;
+  cursor: pointer;
+
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border-radius: 3px;
+
+  transition: background .1s linear;
+}
+
+.btn--red {
+  padding: 1rem 3rem;
+
+  background-color: #e84545;
+}
+
+.btn--red:hover {
+  background-color: #972424;
+}
+
+/* ----------------ADVANTAGES---------------- */ 
+
+.advantages {
+  margin-top: 100px;
+}
+
+.all__advantages {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.advantages__group {
+  width: 350px;
+  margin-bottom: 50px;
+}
+
+.advantages__title {
+  text-transform: uppercase;
+  margin: 20px 0 10px;
+  color: #000000;
+  font-weight: 700;
+}
