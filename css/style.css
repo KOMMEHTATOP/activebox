@@ -642,7 +642,12 @@ p {
     font-size: 0.8rem;
   }
 
+  .download__title {
+    font-size: 1.4rem;
+  }
+
   .download__subtitle {
+    font-size: 0.6rem;
     margin-bottom: 5px;
   }
 
@@ -670,5 +675,10 @@ p {
 
   .copyright {
     padding: 20px 5px;
+  }
+
+  .copyright__text {
+    font-size: 10px;
+    text-align: center;
   }
 }
