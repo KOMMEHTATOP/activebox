@@ -26,6 +26,7 @@ p {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
+  padding: 10px;
 }
 
 /* ----------------HEADER---------------- */
@@ -235,7 +236,13 @@ p {
 
 .team__content {
   width: 25%;
-  margin: 0 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.team__photo {
+  max-width: 250px;
 }
 
 .team__title {
@@ -253,6 +260,8 @@ p {
 .team__text {
   font-size: 1rem;
   line-height: 1.4;
+  text-align: justify;
+  padding: 0 15px;
 }
 
 .social__icons {
@@ -426,4 +435,17 @@ p {
 
 .copyright__text span {
   color: #ffffff ;
+}
+
+
+/* ----------------MEDIA---------------- */
+
+@media (max-width: 1024px) {
+
+
+  .intro__subtitle {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+  }
 }
