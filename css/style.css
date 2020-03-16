@@ -149,7 +149,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .advantages__group {
@@ -229,6 +229,7 @@ p {
 .team__group {
   margin-top: 100px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -370,7 +371,7 @@ p {
   justify-content: space-between;
 }
 
-.contacts__inner {
+.contacts__block {
   width: 33.33333%;
   display: flex;
   flex-direction: column;
@@ -436,17 +437,26 @@ p {
 
 /* ----------------MEDIA---------------- */
 
+@media (max-width: 1094px) {
+  .download {
+    height: 320px;
+  }
+
+  .contacts {
+    height: 280 px;
+  }
+}
+
 @media (max-width: 1024px) {
   .intro__subtitle {
     max-width: 800px;
   }
 
   .advantages {
-    margin-top: 60px;
+    margin: 30px 0;
   }
 
   .all__advantages {
-    justify-content: center;
     align-items: center;
   }
   
@@ -456,9 +466,12 @@ p {
 
   .team__group {
     position: relative;
+    margin-top: 50px;
   }
   
   .team__content {
+    width: 50%;
+    flex-direction: column;
     overflow: hidden;
   }
 
@@ -471,6 +484,13 @@ p {
 }
 
 @media (max-width: 915px) {
+  .nav__link {
+    margin-left: 20px;
+  }
+
+  .social {
+    margin-bottom: 20px;
+  }
 
   .intro__title {
     font-size: 3.5rem;
@@ -484,7 +504,8 @@ p {
     margin-top: 20px;
   }
 
-  .advantages__group {
+  .reviews {
+    margin-top: 70px;
   }
 }
 
@@ -536,8 +557,118 @@ p {
     margin-top: 20px;
   }
 
+  .reviews__photo {
+    width: 100%;
+    transform: translate3d(20px, 0px, 10px)
+  }
+
+  .reviews__right {
+    width: 100%;
+    margin: 15px;
+    text-align: center;
+  }
+
+  .download {
+    height: 250px;
+  }
+
+  .download__title {
+    font-size: 1.6rem;
+  }
+
+  .download__subtitle {
+    font-size: 0.8rem;
+  }
+
   .btn {
     font-size: 0.8rem;
     padding: 0.8rem 2rem;
+  }
+  .contacts {
+
+  }
+
+  .contacts__title {
+    margin-bottom: 13px;
+  }
+
+  .contacts__text {
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+
+  .copyright {
+    padding: 20px;
+    font-size: 0.8rem;
+  }
+
+}
+
+@media (max-width: 380px) {
+  .intro__title {
+    font-size: 2rem;
+  }
+
+  .intro__subtitle {
+    font-size: 0.9rem;
+    margin: 20px 0;
+  }
+
+  .btn {
+    margin-top: 30px;
+  }
+
+  .works__item {
+    width: 100%;
+  }
+
+  .reviews {
+    margin-top: 30px;
+  }
+
+  .reviews__photo {
+    display: none;
+  }
+
+  .reviews__right {
+    padding: 0;
+  }
+
+  .reviews__text {
+    font-size: 2rem;
+  }
+
+  .reviews__author {
+    font-size: 0.8rem;
+  }
+
+  .download__subtitle {
+    margin-bottom: 5px;
+  }
+
+  .contacts {
+    flex-wrap: wrap;
+  }
+  
+  .contacts__block {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .contacts__group {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .contacts__title {
+    margin-bottom: 5px;
+  }
+
+  .shares__title {
+    margin-bottom: 5px;
+  }
+
+  .copyright {
+    padding: 20px 5px;
   }
 }
