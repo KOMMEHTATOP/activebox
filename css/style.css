@@ -81,26 +81,32 @@ p {
 
   border-radius: 5px;
   background-color: rgb(238, 85, 85);
-  height: 50px;
-  width: 50px;
-
-  flex-direction: column;
+  height: 40px;
+  width: 40px;
 
   top: 20px;
   right: 20px;
-
+  flex-direction: column;
   align-items: center;
+
+  cursor: pointer;
 }
 
 .burger__line {
   position: absolute;
-  display: block;
+  display: none;
   width: 40px;
   height: 4px;
   background-color: #fff;
   top: 50%; 
   transform: translateY(-50%);
 }
+
+.burger__nav:active .burger__line::after {
+  transform: rotate(90deg);
+}
+
+
 
 .burger__line::after,
 .burger__line::before {
@@ -112,11 +118,11 @@ p {
 }
 
 .burger__line::after {
-  top: 10px;
+  transform: translateY(10px);
 }
 
 .burger__line::before {
-  top: -10px;
+  transform: translateY(-10px);
 }
 
 
@@ -490,9 +496,6 @@ p {
     height: 320px;
   }
 
-  .contacts {
-    height: 280 px;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -532,6 +535,8 @@ p {
 }
 
 @media (max-width: 915px) {
+
+
   .nav__link {
     margin-left: 20px;
   }
@@ -558,6 +563,10 @@ p {
 }
 
 @media (max-width: 768px) {
+
+  .burger__line {
+    display: block;
+  }
 
   .nav__link {
     display: none;
